@@ -1,2 +1,2 @@
-[{"model": "blog.post", "pk": 1, "fields": {"author": 1, "title": "title1", "text": " Inventory for Orange for week 18.", "created_date": "week 18", "published_date": "published"}},
+[{"model": "blog.post", "pk": 1, "fields": {"author": 1, "title": "title1", "text": " Inventory for Orange for week 18.", "created_date": "2017-02-14T03:27:12.146Z", "published_date": "2017-03-14T03:27:12.146Z"}},
   {"model": "blog.post", "pk": 2, "fields": {"author": 1, "title": "What is Kubernetes?", "text": "Inventory for Orange for week 19.", "created_date": "2017-03-14T03:27:12.146Z", "published_date": "2017-03-14T03:27:12.149Z"}}]

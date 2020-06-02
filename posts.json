@@ -1,2 +1,2 @@
-[{"model": "blog.post", "pk": 1, "fields": {"author": 1, "title": "Week Number 20", "text": "Boat to East Coast --> 111.", "created_date": "2020-02-14T03:27:12.146Z", "published_date": "2020-03-14T03:27:12.146Z"}},
-{"model": "blog.post", "pk": 2, "fields": {"author": 1, "title": "Week Number 21", "text": "Boat to East Coast --> 222.", "created_date": "2020-03-14T03:27:12.146Z", "published_date": "2020-03-14T03:27:12.149Z"}}]
+[{"model": "blog.post", "pk": 1, "fields": {"author": 1, "title": "Week Number 20", "text": "Boat to East Coast --> 666.", "created_date": "2020-02-14T03:27:12.146Z", "published_date": "2020-03-14T03:27:12.146Z"}},
+{"model": "blog.post", "pk": 2, "fields": {"author": 1, "title": "Week Number 21", "text": "Boat to East Coast --> 555.", "created_date": "2020-03-14T03:27:12.146Z", "published_date": "2020-03-14T03:27:12.149Z"}}]

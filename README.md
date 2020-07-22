@@ -96,6 +96,7 @@ Superuser created successfully.
 Installed 2 object(s) from 1 fixture(s)
 ```
 
+
 You can login to the blog application by clicking on the person icon top right of the blog application web page. Then click the plus icon top right to add a new post.
 
 The blog posts title and text content should now survive a restart of the container. Any uploaded image will still be lost at this point on a restart.

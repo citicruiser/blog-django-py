@@ -24,7 +24,7 @@ A source build and deployment can be run direct from this repository.
 To build and deploy the sample application from the command line, you can run:
 
 ```
-oc new-app python:latest~https://github.com/openshift-katacoda/blog-django-py --name blog-from-source-py
+oc new-app python:latest~https://github.com/citicruiser/blog-django-py --name blog-from-source-py
 oc expose svc/blog-from-source-py
 ```
 

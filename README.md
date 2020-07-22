@@ -63,7 +63,7 @@ oc new-app postgresql-persistent --name blog-database --param DATABASE_SERVICE_N
 To re-configure the blog application to use the database, you need to set the ``DATABASE_URL`` environment variable for the blog application.
 
 ```
-oc set env dc/blog-from-source-py DATABASE_URL=postgresql://sampledb:sampledb@blog-database:5432/sampledb
+oc set env dc/blog-django-py DATABASE_URL=postgresql://sampledb:sampledb@blog-database:5432/sampledb
 ```
 
 As a separate service is used for the database, it is necessary to manually setup the database the first time. This requires logging into the pod and running a ``setup`` script.
@@ -71,7 +71,7 @@ As a separate service is used for the database, it is necessary to manually setu
 To run the ``setup`` script from the command line, you can run:
 
 ```
-POD=`oc get pods --selector app=blog-from-source-py -o name`
+POD=`oc get pods --selector app=blog-django-py -o name`
 oc rsh $POD scripts/setup
 ```
 

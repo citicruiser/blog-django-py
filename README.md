@@ -110,7 +110,7 @@ Before a persistent volume is added, it is necessary to change the deployment st
 To change the deployment strategy from the command line, you can run:
 
 ```
-oc patch dc/blog-from-source-py -p '{"spec":{"strategy":{"type":"Recreate"}}}'
+oc patch dc/blog-django-py  -p '{"spec":{"strategy":{"type":"Recreate"}}}'
 ```
 
 When mounting the persistent volume for storing images it should be mounted in the blog application at ``/opt/app-root/src/media``.
@@ -118,7 +118,7 @@ When mounting the persistent volume for storing images it should be mounted in t
 To add the persistent volume from the command line, you can run
 
 ```
-oc set volume dc/blog-from-source-py --add --name=blog-images -t pvc --claim-size=1G -m /opt/app-root/src/media
+oc set volume dc/blog-django-py --add --name=blog-images -t pvc --claim-size=1G -m /opt/app-root/src/media
 ```
 
 When images are attached to a post, they do not appear on the top level page containing all posts, you need to drill down into the post to see it.
@@ -135,7 +135,7 @@ To make it easy to demonstrate green/blue or a/b deployments, it is possible to 
 To set environment variables from the command line, you can run:
 
 ```
-oc set env dc/blog-from-source-py BLOG_BANNER_COLOR=blue
+oc set env dc/blog-django-py BLOG_BANNER_COLOR=blue
 ```
 
 Under the title on each page, the host name for the pod handling the request is also shown if disabling sticky sessions on routing, or using curl to show how requests or different users are automatically load balanced across instances when scaled up.
